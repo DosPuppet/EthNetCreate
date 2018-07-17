@@ -55,6 +55,8 @@ RPC endpoint is on standard port - http://localhost:8545, you can use metamask a
 
 ## Adding another Autority Node
 
+## Remove and clean-up
+
 ## Notes
 
 This is a starting point to try decentralized ethereum ecosystem. Don't stop here, real stuff in crypto/blockchain/decentralisation is way further...
