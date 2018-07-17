@@ -8,12 +8,18 @@ read -p "Entrez la seed phrase de génération de la clé (plus long = plus séc
 read -sp "Entrez un mot de passe pour le compte: " vpassword 
 echo ""
 
-cp $scriptpath/keys.clean $scriptpath/keys.sh
-chmod +x $scriptpath/keys.sh
+autKey="$(curl --data "{\"jsonrpc\":\"2.0\",\"method\":\"parity_newAccountFromPhrase\",\"params\":[\"$seed\", \"$spassword\"],\"id\":0}" -H "Content-Type: application/json" -X POST localhost:8545)"
+echo "${autKey}"
+chainValidator=${autKey:27:42}
 
-sed -i -e "s/\"seed1\"/\"$seed\"/g" $scriptpath/keys.sh 
-sed -i -e "s/\"password1\"/\"$spassword\"/g" $scriptpath/keys.sh
-sed -i -e "s/\"seed2\"/\"$vault\"/g" $scriptpath/keys.sh 
-sed -i -e "s/\"password2\"/\"$vpassword\"/g" $scriptpath/keys.sh
+vaultKey="$(curl --data "{\"jsonrpc\":\"2.0\",\"method\":\"parity_newAccountFromPhrase\",\"params\":[\"$vault\", \"$vpassword\"],\"id\":0}" -H "Content-Type: application/json" -X POST localhost:8545)"
+echo "${vaultKey}"
+vault=${vaultKey:27:42}
+
+
+sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" $autpath/chain.json
+sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" $autpath/node.toml
+sed -i -e "s/\"0x0000000000000000000000000000000000000005\"/\"$vault\"/g" $autpath/chain.json
+
 
 
