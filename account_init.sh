@@ -2,7 +2,7 @@
 
 read -p "Entrez la seed phrase de génération de la clé (plus long = plus sécurisé) d'autorité: " seed
 read -sp "Entrez un mot de passe pour le compte: " spassword
-echo "$spassword" &> node.pwds 
+echo "$spassword" &> aut_node/node.pwds 
 echo ""
 read -p "Entrez la seed phrase de génération de la clé (plus long = plus sécurisé) de réserve: " vault
 read -sp "Entrez un mot de passe pour le compte: " vpassword 

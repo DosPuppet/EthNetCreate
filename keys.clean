@@ -9,9 +9,9 @@ echo "${vaultKey}"
 vault=${vaultKey:27:42}
 
 
-sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" chain.json
-sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" node.toml
+sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" aut_node/chain.json
+sed -i -e "s/\"0x0000000000000000000000000000000000000000\"/\"$chainValidator\"/g" aut_node/node.toml
 
-sed -i -e "s/\"0x0000000000000000000000000000000000000005\"/\"$vault\"/g" chain.json
+sed -i -e "s/\"0x0000000000000000000000000000000000000005\"/\"$vault\"/g" aut_node/chain.json
 
 
