@@ -32,16 +32,22 @@ $ ./init.sh
 
 The prompt will ask you parameters. Remember passphrases and passwords when asked. Those will be the keys of the Authority node block validation and Vault key to distribute Eth as you want.
 
-The Authority node is created :
+The Authority node is created.
+
+
+Before launching your node, you can configure ports (be sure your node is stopped), with ```$ conf.sh```.
 
 ```bash
 $ cd aut_node
 $ ./start_node.sh
 ```
 
-See your node running and validating blocks
+See your node running and validating blocks.
+
 
 #### Access Point
+
+If you didn't custom your ports: 
 
 You can access Parity-UI localy - http://localhost:8180 to acces your accounts, build smart-contracts and send Eth.
 
@@ -61,36 +67,26 @@ The prompt will ask for a directory to install your new node.
 Go to the directory you gave :
 
 ```bash
-$ cd <your node directory>
+$ cd <your node directory>/norm_node
 ````
 
-if you want to run your node on a different server, just copy the directory wherever you want on your new server (make sur parity is installed and that the two server are on the same network and can see each other).
+Run ```$ ./conf.sh``` to custom ports, needed if you run your node localy, to have different ports than the autority node.
 
-#### Bootnodes
-
-Bootnodes are the nodes that will be accessed by your new node to sync to other. You must add at least one bootnode to your other nodes to sync. A node is identified by an enode.
-
-
-
-
-If you copied your standard node on a new server, go to your copied directory :
-```bash
-$ cd norm_node
-$ ./start_node.sh
-```
-Your new node is synced.
-You can access it like the Autority Node (parity UI, metamask, ...).
-
-#### Running multiple nodes localy 
-
-```bash
-$ cd norm_node
-$ ./start_node.sh
-```
+You can move the ```norm_node``` directory as is to another server. Make sure parity is installed and run ```$ ./start_node.sh``` to see your new node up and running.
 
 ## Adding another Autority Node
 
+TODO
+
 ## Remove and clean-up
+
+To remove the autority node :
+ctrl^C parity
+
+```bash
+$ cd scripts
+$ ./rem_chain.sh
+```
 
 ## Notes
 
