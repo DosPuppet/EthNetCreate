@@ -1,0 +1,14 @@
+[parity]
+chain = "chain.json"
+base_path = "node"
+[network]
+port = 30300
+nat = "any"
+discovery = true
+[rpc]
+port = 8545
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+[ui]
+port = 8180
+[websockets]
+port = 8450
