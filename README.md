@@ -34,6 +34,9 @@ The prompt will ask you parameters. Remember passphrases and passwords when aske
 
 The Authority node is created
 
+
+Before launching your node, you can configure ports (be sure your node is stopped), with ```$ conf.sh```
+
 ```bash
 $ cd aut_node
 $ ./start_node.sh
@@ -41,9 +44,6 @@ $ ./start_node.sh
 
 See your node running and validating blocks
 
-#### Advanced 
-
-Before launching your node, you can configure ports (be sure your node is stopped), with ```bash $ conf.sh```
 
 #### Access Point
 
