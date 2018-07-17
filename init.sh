@@ -5,6 +5,7 @@ export scriptpath="$(echo "$(pwd)")"/scripts
 
 cp $scriptpath/node.clean $autpath/node.toml
 cp $scriptpath/conf.sh $autpath/
+cp $scriptpath/start_node.sh $autpath/
 
 $scriptpath/chain_init.sh
 
