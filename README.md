@@ -56,8 +56,11 @@ RPC endpoint is on standard port - http://localhost:8545, you can use metamask a
 #### Notes
 
 #### Tip for Beer :
+
 Eth : 0x1C8F99295433921EbDC6E37951AF074014003D06
+
 BTC : 1GkEPZ4nQUYycSm9JB1Nvozf2hAKkmLwaa
+
 XMR : 432fU3BV4vA9ptxEEoVUpsabBWjRkYcTQDq68n33qCaZakpNfjFGPs3LuexUsqTop69sEej7Unr4qh18j1hpVkn8BTUwcDH
 
 
