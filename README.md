@@ -32,7 +32,7 @@ $ ./init.sh
 
 The prompt will ask you parameters. Remember passphrases and passwords when asked. Those will be the keys of the Authority node block validation and Vault key to distribute Eth as you want.
 
-The Authority node is created :
+The Authority node is created
 
 ```bash
 $ cd aut_node
@@ -40,6 +40,10 @@ $ ./start_node.sh
 ```
 
 See your node running and validating blocks
+
+#### Advanced 
+
+Before launching your node, you can configure ports (be sure your node is stopped), with ```bash $ conf.sh```
 
 #### Access Point
 
