@@ -51,7 +51,42 @@ RPC endpoint is on standard port - http://localhost:8545, you can use metamask a
 
 ## Adding a normal Node
 
+Once your Autority Node is runnning, you can create a local node. 
+In the EthNetCreate directory :
+
+```bash
+$ make_node.sh
+```
+The prompt will ask for a directory to install your new node.
+Go to the directory you gave :
+
+```bash
+$ cd <your node directory>
+````
+
+if you want to run your node on a different server, just copy the directory wherever you want on your new server (make sur parity is installed and that the two server are on the same network and can see each other).
+
 #### Bootnodes
+
+Bootnodes are the nodes that will be accessed by your new node to sync to other. You must add at least one bootnode to your other nodes to sync. A node is identified by an enode.
+
+
+
+
+If you copied your standard node on a new server, go to your copied directory :
+```bash
+$ cd norm_node
+$ ./start_node.sh
+```
+Your new node is synced.
+You can access it like the Autority Node (parity UI, metamask, ...).
+
+#### Running multiple nodes localy 
+
+```bash
+$ cd norm_node
+$ ./start_node.sh
+```
 
 ## Adding another Autority Node
 
