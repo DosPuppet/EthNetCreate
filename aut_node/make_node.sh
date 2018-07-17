@@ -1,7 +1,9 @@
 #!/bin/bash
 
-cp chain.json ../norm_node
-cp node.norm ../norm_node/node.toml
-cp start_node.sh ../norm_node
+read -p "entrez le répertoire de création du nouveau noeud: " nodepath
+mkdir $nodepath/norm_node 
+cp chain.json $nodepath/norm_node
+cp node.norm $nodepath/norm_node/node.toml
+cp start_node.sh $nodepath/norm_node
 
 
