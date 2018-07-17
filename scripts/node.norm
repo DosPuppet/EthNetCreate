@@ -5,6 +5,7 @@ base_path = "node"
 port = 30300
 nat = "any"
 discovery = true
+bootnodes = []
 [rpc]
 port = 8545
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
