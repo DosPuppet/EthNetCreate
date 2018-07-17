@@ -1,6 +1,6 @@
 # EthNetCreate
-Create a local and/or distibuted Ethereum Network with Parity (PoA)
-This is a pack of shell scripts to create Genesis, configuration file and necessary keys (linux / OSX)
+Create a local and/or distibuted Ethereum Network with Parity (PoA).
+This is a pack of shell scripts to create Genesis, configuration file and necessary keys.
 
 The network is created with a POA consensus model : first an authority node is created (validates block insted of traditional PoW mining). 
 
@@ -54,6 +54,9 @@ RPC endpoint is on standard port - http://localhost:8545, you can use metamask a
 ## Adding another Autority Node
 
 #### Notes
+
+This is a starting point to try decentralized ethereum ecosystem. Don't stop here, real stuff in crypto/blockchain/decentralisation is way further...
+
 
 #### Tip for Beer :
 
