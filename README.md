@@ -47,9 +47,11 @@ You can access Parity-UI localy - http://localhost:8180 to acces your accounts, 
 
 RPC endpoint is on standard port - http://localhost:8545, you can use metamask and play with all dapps ecosystem (remix and ethereum wallet are good to go)
 
-/!\ --> The configuration is to test network, all APIs are open, and the Autority Node and Vault secret keys are on the server. Please see [parity doc](https://wiki.parity.io/) to harden your node and don't go live/production with this node as is.
+#### /!\ --> The configuration is to test network, all APIs are open, and the Autority Node and Vault secret keys are on the server. Please see [parity doc](https://wiki.parity.io/) to harden your node and don't go live/production with this node as is.
 
 ## Adding a normal Node
+
+#### Bootnodes
 
 ## Adding another Autority Node
 
