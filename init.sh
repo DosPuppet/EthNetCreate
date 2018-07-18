@@ -2,10 +2,12 @@
 
 export autpath="$(echo "$(pwd)")"/aut_node
 export scriptpath="$(echo "$(pwd)")"/scripts
+mkdir $autpath
 
 cp $scriptpath/node.clean $autpath/node.toml
 cp $scriptpath/conf.sh $autpath/
 cp $scriptpath/start_node.sh $autpath/
+cp $scriptpath/node.pwds $autpath/
 
 $scriptpath/chain_init.sh
 
