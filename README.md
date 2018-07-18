@@ -76,7 +76,16 @@ You can move the ```norm_node``` directory as is to another server. Make sure pa
 
 ## Adding another Autority Node
 
-TODO
+**Work in progress.** 
+
+Run ```$ ./make_aut.sh``` in the first validator node.
+
+Actualy working but you need to reset chain when adding a validator :
+```bash
+$ rm <path to aut_node>/node/chains/*
+```
+
+TODO : switch to smart contract for validator nodes.
 
 ## Remove and clean-up
 
