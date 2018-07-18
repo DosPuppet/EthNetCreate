@@ -88,6 +88,8 @@ $ cd scripts
 $ ./rem_chain.sh
 ```
 
+To remove a normal node, simply ```$ rm -r``` the node folder.
+
 ## Notes
 
 This is a starting point to try decentralized ethereum ecosystem. Don't stop here, real stuff in crypto/blockchain/decentralisation is way further...
