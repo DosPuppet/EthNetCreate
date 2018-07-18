@@ -17,7 +17,6 @@ parity --config node.toml --force-ui --gasprice=0 --gas-price-percentile=0 --pri
 parityid=$!
 
 $scriptpath/account_init.sh
-#$scriptpath/keys.sh
 
 kill $parityid
 
