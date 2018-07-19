@@ -15,7 +15,7 @@ You can then create standard nodes as you want. It's an ideal way to test Ethere
 First install [parity](https://github.com/paritytech/parity):
 
 ```bash
-$ curl https://sh.rustup.rs -sSf | sh
+$ bash <(curl https://get.parity.io -L) -r stable
 ```
 
 Clone this repo :
