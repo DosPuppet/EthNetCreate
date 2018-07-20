@@ -80,10 +80,11 @@ You can move the ```norm_node``` directory as is to another server. Make sure pa
 
 Run ```$ ./make_aut.sh``` in the first validator node.
 
-Actualy working but you need to reset chain when adding a validator :
+Actualy working but you need to reset chain on all your nodes when adding a validator :
 ```bash
 $ rm <path to aut_node>/node/chains/*
 ```
+Best way is to create the validator nodes from the first node, reset chain, the start your nodes and create as much normal nodes as you want.
 
 TODO : switch to smart contract for validator nodes.
 
