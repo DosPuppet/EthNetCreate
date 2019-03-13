@@ -68,7 +68,7 @@ Go to the directory you gave :
 
 ```bash
 $ cd <your node directory>/norm_node
-````
+```
 
 Run ```$ ./conf.sh``` to custom ports, needed if you run your node localy, to have different ports than the autority node.
 
