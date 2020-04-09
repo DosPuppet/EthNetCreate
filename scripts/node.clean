@@ -17,4 +17,4 @@ port = 8450
 password = ["node.pwds"]
 [mining]
 engine_signer = "0x0000000000000000000000000000000000000000"
-reseal_on_txs = "none"
+reseal_on_txs = "all"
