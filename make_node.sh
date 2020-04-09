@@ -11,6 +11,7 @@ cp $scriptpath/start_node.sh $nodepath/norm_node
 cp $scriptpath/conf.sh $nodepath/norm_node
 
 read -p "entrez le port RPC de l'autority node (default 8545): " rpcport
+[[ -z "$rpcport" ]] && rpcport=8545
 enode="$(curl --data '{"method": "parity_enode", "params": [], "id": 1, "jsonrpc": "2.0"}' -H "Content-Type: application/json" -X POST localhost:$rpcport)"
 enodeSize="$(echo $enode | wc -c)"
 enodeSize="$(echo $(($enodeSize-37)))"
